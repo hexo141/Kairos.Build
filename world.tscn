@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=4 uid="uid://bhiitvsspk2kc"]
+
+[ext_resource type="Texture2D" uid="uid://s1m1tr4jimrp" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="1_f3sb7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fj7yv"]
+texture = ExtResource("1_f3sb7")
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.6978817, 8, 2.3381634, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 3.956892, 8, 3.5971756, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.6978817, 8, 2.3381634, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_tlwt5"]
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_fj7yv")
+
+[node name="World" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAwAAQABAAEAAAABAAwAAQACAAEAAAACAAwAAQADAAEAAAADAAwAAQABAAEAAAAEAAwAAQACAAEAAAAFAAwAAQADAAEAAAAGAAwAAQABAAEAAAAHAAwAAQACAAEAAAAIAAwAAQADAAEAAAAJAAwAAQABAAEAAAAKAAwAAQACAAEAAAAMAAwAAQADAAEAAAANAAwAAQADAAEAAAAOAAwAAQADAAEAAAAPAAwAAQADAAEAAAAQAAwAAQADAAEAAAARAAwAAQADAAEAAAASAAwAAQADAAEAAAATAAwAAQADAAEAAAAUAAwAAQADAAEAAAAVAAwAAQADAAEAAAAWAAwAAQADAAEAAAAXAAwAAQADAAEAAAAXAAsAAQADAAAAAAAWAAsAAQADAAAAAAAVAAsAAQADAAAAAAAUAAsAAQADAAAAAAATAAsAAQADAAAAAAASAAsAAQADAAAAAAARAAsAAQADAAAAAAAQAAsAAQADAAAAAAAPAAsAAQADAAAAAAAOAAsAAQADAAAAAAANAAsAAQADAAAAAAAMAAsAAQADAAAAAAALAAsAAQADAAAAAAALAAwAAQADAAEAAAAAAAsAAQABAAAAAAABAAsAAQACAAAAAAACAAsAAQADAAAAAAADAAsAAQABAAAAAAAEAAsAAQACAAAAAAAFAAsAAQADAAAAAAAGAAsAAQABAAAAAAAHAAsAAQACAAAAAAAIAAsAAQADAAAAAAAJAAsAAQABAAAAAAAKAAsAAQACAAAAAAA=")
+tile_set = SubResource("TileSet_tlwt5")
